@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 column Layout</title>
+    <style>
+
+        .container{
+            width: 1080px;
+            margin: auto;
+        }
+
+        .header{
+            width: inherit;
+            height: 100px;
+            background-color: #9219ff;
+        }
+
+        .content{
+            width: 400px;
+            height: 200px;
+            background-color: #ff3d19;
+            float: left;
+        }
+
+        .column{
+            width: 360px;
+            height: 200px;
+            background-color: chocolate;
+            float: left;
+         }
+
+        .navbar{
+            width: inherit;
+            height: 75px;
+            background-color: #92ff15;
+        }
+
+        .footer{
+            width: 100px;
+            height: 100%;
+            background-color: #0904ff;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container" id="container">
+    <div class="header">Header</div>
+    <div class="navbar">Navbar</div>
+    <div class="content">Content 1</div>
+    <div class="content">Content 2</div>
+    <div class="column">column 1</div>
+    <div class="column">column 2</div>
+    <div class="column">column 3</div>
+    <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>

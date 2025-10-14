@@ -2,28 +2,26 @@
     width: 80%;
     margin: auto;
     padding: 10px;
+
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
     gap: 10px 10px;
 }
 
-.grid-container >
+
 
 .site-header{
     background-color: cornflowerblue;
     width: 100%;
     height: 150px;
     text-align: center;
+    grid-column: 1 / span 3
 }
 
 .site-header h1{
     padding-top: 50px
 }
-
-.main , site{
-    grid-column: 2 / span 3;
-}
-
 
 .site-footer{
     background-color: midnightblue;
@@ -31,4 +29,5 @@
     width: 100%;
     height: 100px;
     text-align: center;
+    grid-column: 1 / span 3;
 }

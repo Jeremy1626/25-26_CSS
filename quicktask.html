@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Task</title>
+    <style>
+        body{
+            background-color: #ED7253;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-areas:
+                "header header header header header"
+                "navbar navbar navbar header logo"
+                "leftbar main main main rightbar"
+                "footer footer footer footer";
+
+        }
+
+        .gird-container > div{
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .item1{
+            grid-area: header;
+            background-color: #74A1CD;
+            text-align: center;
+            color: #ffffff
+        }
+
+        .item1 > h1{
+            font-size: 40px;
+        }
+
+        .item2{
+            grid-area: menu;
+        }
+
+        .item2 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .item2 li{
+            padding: 8px;
+            margin-bottom: 9px;
+            background-color: #55D790;
+            color: #ffffff;
+        }
+
+        .item2 > li:hover{}
+
+        .item3{
+            grid-area: main;
+        }
+
+        .item3 > h1{
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
+        .item3 > p{
+            margin-bottom: 7px;
+        }
+
+        .item4{
+            grid-area: right;
+            border: 2px solid #A496A8;
+            background-color: #0099cc;
+            padding: 15px;
+            color:white;
+        }
+        .item6{
+            background-color: #55D790;
+        }
+
+        .item7{
+            background-color: #ff3d19;
+        }
+
+        .item5{
+            grid-area: footer;
+            background-color: #C7B157;
+            color: #B96666;
+            text-align: center;
+        }
+
+
+
+        @media only screen and (max-width: 600px){
+            body{
+                .item1{ grid-area: 1/ span 6;}
+                .item2{ grid-area: 2/ span 6;}
+                .item3{ grid-area: 3/ span 6;}
+                .item4{ grid-area: 4/ span 6;}
+                .item5{ grid-area: 5/ span 6;}
+            }
+        }
+
+        @media only screen and (min-width: 600px){
+            body{
+                .item1{ grid-area: 1/ span 6;}
+                .item2{ grid-area: 2/ span 1;}
+                .item3{ grid-area: 2/ span 4;}
+                .item4{ grid-area: 3/ span 6;}
+                .item5{ grid-area: 4/ span 6;}
+            }
+        }
+
+        @media only screen and (min-width: 768px){
+            body{
+                .item1{ grid-area: 1/ span 6;}
+                .item2{ grid-area: 2/ span 1;}
+                .item3{ grid-area: 2/ span 4;}
+                .item4{ grid-area: 2/ span 1;}
+                .item5{ grid-area: 3/ span 6;}
+            }
+        }
+
+        @media only screen and (orientation:landscape){
+            body{
+                background-color: cadetblue;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <div class="item1">
+        <h1>Quick Task</h1>
+    </div>
+
+    <div class="item2">
+        <ul>
+            <li>Task</li>
+        </ul>
+    </div>
+
+    <div class="item3">
+        <h1>Quick Tasks</h1>
+        <p>Simple 1 page webpage.<br/> Grid tempalte areas:<br/>header header header header header<br/>navbar navbar navbar navbar logo
+            <br/>leftbar main main main rightbar<br/>footer footer footer footer footer</p>
+    </div>
+
+    <div class="item4">
+        <h2>Logo:</h2>
+        <ul>
+            <li>This is where the Logo will go.</li>
+        </ul>
+    </div>
+
+    <div class="item6">6</div>
+
+    <div class="item7">7</div>
+
+    <div class="item5">
+        <p>Footer</p>
+    </div>
+
+
+
+</body>
+</html>

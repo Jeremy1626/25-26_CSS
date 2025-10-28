@@ -73,7 +73,6 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-
 }
 
 .card:hover {
@@ -219,8 +218,7 @@ body {
     font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 4px;
